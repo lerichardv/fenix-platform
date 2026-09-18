@@ -1,0 +1,38 @@
+# Application & Project Directories
+/payrollapp/
+/nbproject/
+
+# Database dumps & SQL
+*.sql
+
+# Root text files
+/*.txt
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs & Error logs
+*.log
+error_log
+/log
+
+# Server & Protocol metadata
+.well-known/
+.ftpquota
+/.htaccess
+
+# Operating System files
+.DS_Store
+.DS_store
+.ds-store
+._*
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

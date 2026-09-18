@@ -1,0 +1,25 @@
+<?PHP
+/*
+ * Listado de los departamentos  para casos.
+ * @author      Kevin Fúnez
+ * @date        2017-03-26
+ */
+
+session_start();
+if(!isset($_SESSION['cod_usuario'])){
+	header('Location: index.php');
+}
+
+/*CONEXION CON BASE DE DATOS*/
+include_once("../../libs/db_classes/db_mysql_conn.php");
+include_once("../../libs/db_classes/db_geografia.php");
+/*INSTANCIAMIENTOS*/
+$DB_GEOGRAFIA  = new db_geografia();
+$cod_pais	     = $_POST['x1'];
+$DEPARTAMENTOS = $DB_GEOGRAFIA->get_departamentos($cod_pais);
+//Recorre el arreglo para convertir caracteres especiales en simbolos legibles para el lenguaje.
+foreach($DEPARTAMENTOS as $DEPARTAMENTO){
+	$data[]=array_map('utf8_encode', $DEPARTAMENTO);
+}
+echo json_encode($data);
+?>

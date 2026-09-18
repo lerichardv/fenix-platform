@@ -1,0 +1,118 @@
+/* Encabezado Tabla */
+.panel_cabecera div {
+	margin-top: -18px;
+	font-size: 15px;
+}
+.panel_cabecera div span{
+	margin-left:5px;
+}
+.table-header{
+	background: rgb(217, 237, 247);
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 12px;
+}
+.table-header-hidden{
+	margin-top: 8px;
+	font-weight: bold;
+}
+/* Añadir estilo "Danger" al encabezado de la tabla*/
+.no-data-in-table{
+	border-color: rgb(217, 83, 79);
+}
+.no-data-in-table:after{
+	content: "Seleccione al menos un registro";
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.no-data-in-table > .panel-heading{
+	background: rgb(217, 83, 79);
+	border-color: rgb(217, 83, 79);
+}
+/* Filas de la tabla */
+.table-row-stripped{
+	background: rgb(215, 215, 215);
+	border-bottom: 1px solid rgb(195, 195, 195);
+	padding: 5px 0px !important;
+}
+.table-row-stripped:nth-child(even){
+	background: rgb(240, 240, 240);
+}
+.table-row-stripped:last-child{
+	border-bottom: none;
+}
+/* Contenedor Botón Agregar */
+.row-add-content{
+	padding: 5px 0px !important;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+/* Botón agregar contenido */
+button.truncated-text{
+	width: 100%;
+	overflow: hidden;
+}
+.truncated-text{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/* Xtra-small Only*/
+@media (max-width: 767px){
+	.text-center-for-xtra-small-only{ text-align: center; }
+	.hide-for-xtra-small-only{ display: none !important; }
+}
+/* Small DOWN */
+@media (max-width: 991px){
+	.text-center-for-small-down{ text-align: center; }
+	.text-left-for-small-down{ text-align: left; }
+	.text-right-for-small-down{ text-align: right; }
+	.hide-for-small-down{ display: none !important; }
+	.show-for-small-down{ display: inline-block !important; }
+}
+/* Small ONLY */
+@media (min-width: 768px) and (max-width: 991px){
+	.text-center-for-small-only{ text-align: center; }
+	.hide-for-small-only{ display: none !important; }
+	.show-for-small-only{ display: inline-block !important; }
+}
+/* Small UP */
+@media (min-width: 768px){
+	.text-center-for-small-up{ text-align: center; }
+	.hide-for-small-up{ display: none !important; }
+	.show-for-small-up{ display: inline-block !important; }
+}
+/* Medium DOWN */
+@media (max-width: 1199px){
+	.show-for-medium-down{ display: inline-block !important; }
+}
+/* Medium ONLY */
+@media (min-width: 992px) and (max-width: 1199px){
+	.show-for-medium-only{ display: inline-block !important; }
+}
+/* Medium UP */
+@media (min-width: 992px){
+	.show-for-small-down, .show-for-small-only{
+		display: none !important;
+	}
+	.show-for-medium-up{ display: inline-block !important; }
+}
+
+.nopadding{
+	padding: 0px !important;
+}
+.nomargin{
+	margin: 0px !important;
+}
+
+.margin-top-5{ margin-top: 5px !important; }
+.margin-top-10{ margin-top: 10px !important; }
+.margin-top-20{ margin-top: 20px !important; }
+.margin-top-30{ margin-top: 30px !important; }
+.margin-bottom-5{ margin-bottom: 5px !important; }
+.margin-bottom-10{ margin-bottom: 10px !important; }
+.margin-bottom-20{ margin-bottom: 20px !important; }
+.margin-bottom-30{ margin-bottom: 30px !important; }
+.padding-5{ padding: 5px !important;}

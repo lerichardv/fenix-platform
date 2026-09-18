@@ -1,0 +1,496 @@
+.row{
+            padding: 0 10px;
+        }
+        .panel_cabecera div {
+            margin-top: -18px;
+            font-size: 15px;
+        }
+        .panel_cabecera div span{
+            margin-left:5px;
+        }
+        .panel_cuerpo{
+            display: none;
+        }
+        #dev-table {
+            font-size: 12px;
+        }
+        .letra {
+            font-size: 12px;
+        }       
+        .state-icon {
+            left: -5px;
+        }
+        .list-group-item-primary {
+            color: rgb(255, 255, 255);
+            background-color: rgb(66, 139, 202);
+        }
+        .row-no-evaluacion-container{
+            padding: 0px;
+            margin: 0px;
+            border-bottom: 1px solid rgb(179, 145, 86);
+        }
+        .row-no-evaluacion{
+            padding: 10px;
+            padding-right: 5px;
+            background-color: rgb(226, 181, 102);
+            color: rgb(255,255,255);
+            color: rgb(5,5,5);
+        }
+        .evaluador-nombre{
+            font-weight: bold;
+        }
+        .btn-full-width{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container-btn-grid{
+            padding-right: 5px !important;
+        }
+        .container-datepicker{
+            width: 100%;
+            background: rgb(244, 216, 177);
+        }
+        .container-datepicker input{
+            display: none;
+        }
+        /* datepicker */
+        .container-datepicker .bootstrap-datetimepicker-widget {
+            box-shadow: 3px 3px 0px rgb(156, 156, 156);
+            border: 1px solid rgb(128, 128, 128);
+        }
+        /* Celdas Año, meses */
+        .container-datepicker .bootstrap-datetimepicker-widget table td span {
+            min-width: 54px;
+            width: 20%;
+        }
+        .container-datepicker .bootstrap-datetimepicker-widget table td span:hover {
+            background: rgb(240, 173, 78);
+        }
+        .container-datepicker .bootstrap-datetimepicker-widget table td span.disabled, 
+        .container-datepicker .bootstrap-datetimepicker-widget table td span.disabled:hover {
+            background: none;
+            color: #777;
+            cursor: not-allowed;
+        }
+        /* Celdas dias,horas,minutos */
+        .container-datepicker .bootstrap-datetimepicker-widget table td.day:hover, 
+        .container-datepicker .bootstrap-datetimepicker-widget table td.hour:hover, 
+        .container-datepicker .bootstrap-datetimepicker-widget table td.minute:hover, 
+        .container-datepicker .bootstrap-datetimepicker-widget table td.second:hover {
+            background: rgb(240, 173, 78);
+            cursor: pointer;
+        }
+        .container-datepicker .bootstrap-datetimepicker-widget table td.disabled, 
+        .container-datepicker .bootstrap-datetimepicker-widget table td.disabled:hover {
+            background: none;
+            color: #777;
+            cursor: not-allowed;
+        }
+        /* Controles header */
+        .container-datepicker .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+            background: rgb(240, 173, 78);
+        }
+        .container-datepicker .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+            background: rgb(240, 173, 78);
+        }
+        .container-datepicker .bootstrap-datetimepicker-widget table th.disabled, 
+        .container-datepicker .bootstrap-datetimepicker-widget table thead tr:first-child th.disabled:hover {
+            background: none;
+            color: rgb(170, 170, 170);
+            cursor: not-allowed;
+        }
+        .score-advice{
+            background-color: rgb(255, 255, 250);
+            display: inline-block;
+            padding: 6px;
+            font-size: 12px;
+            border: 1px solid rgb(12, 88, 125);
+            color: rgb(0, 136, 204);
+        }
+        .score-advice.aprobar{
+            color: rgb(54, 125, 54);
+        }
+        .score-advice.denegar{
+            color: rgb(212, 63, 58);
+        }
+        .score-advice.observaciones{
+            color: rgb(181, 119, 31);
+        }
+        .table{
+            margin-bottom: 0px;
+        }
+        .table td{
+            border-top-color: rgb(150, 150, 150) !important;
+        }
+
+        .panel-propuesta{
+            margin-bottom: 0px;
+            border-radius: 0px;
+            background: rgb(230, 237, 241);
+            border-color: rgb(50, 50, 50);
+            border-top: none;
+        }
+        .panel-heading-propuesta{
+            border-radius: 0px;
+            margin-bottom: 1px;
+            background: rgb(31, 54, 68) !important;
+            border-color: rgb(50,50,50) !important;
+        }
+        .panel-title.main{
+            text-transform: uppercase !important;
+        }
+        .btn-toggle-table{
+            color: rgb(255,255,255);
+            background: transparent;
+            background: rgba(0,0,0,0);
+            font-size: 1.8em;
+        }
+        .btn-toggle-table:hover,
+        .btn-toggle-table:focus{
+            color: rgb(177, 207, 222);
+        }
+        .panel-inside-1{
+            border-radius: 0px;
+            margin-bottom: 1px;
+            background: rgb(31, 27, 37) !important;
+            border-color: rgb(50,50,50) !important;
+        }
+
+
+        .row-with-attachment{
+            cursor: not-allowed !important;
+            background-color: rgb(42, 160, 148);
+            border-color: rgb(23, 121, 111);
+            background-color: rgb(50, 50, 50) !important;
+            border-color: rgb(35, 35, 35) !important;
+        }
+        .container-upload-box{
+            width: 100%;
+            display: table;
+            border-collapse: separate;
+        }
+
+        .btn-select-file{
+            display: table-cell;
+            width: 100%;
+            height: 30px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background: rgb(37, 105, 162);
+            border: 1px solid rgb(24, 90, 146);
+            color: rgb(255,255,255);
+        }
+        .btn-select-file.info{
+            border: 1px solid rgb(60, 171, 204);
+            background: rgb(91, 192, 222);
+        }
+
+        .btn-select-file.ready-to-upload{
+            background: rgb(140, 197, 245);
+            border: 1px solid rgb(24, 90, 146);
+            color: rgb(14, 68, 113);
+        }
+        .btn-select-file.with-attachment{
+            background: rgb(20,128,140);
+            border: 1px solid rgb(24,90,146);
+            border: 1px solid rgb(31, 149, 162);
+            color: rgb(255,255,255);
+        }
+        .btn-select-file.disabled{
+            background: rgb(212, 212, 212);
+            border: 1px solid rgb(161, 161, 161);
+            color: rgb(100,100,100);
+            cursor: not-allowed;
+        }
+        .btn-upload-file{
+            display: table-cell;
+            width: 30px;
+            background: rgb(37, 105, 162);
+            color: rgb(24, 90, 146);
+            border: 1px solid rgb(24, 90, 146);
+            border-left: none;
+            text-align: center;
+            font-size: 16px;
+            padding-left: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            vertical-align: middle;
+        }
+        .btn-upload-file.info{
+            border: 1px solid rgb(60, 171, 204);
+            background: rgb(91, 192, 222);
+            color: rgb(43, 135, 162);
+            border-left: none;
+        }
+        .btn-upload-file:hover,
+        .btn-upload-file:focus{
+            background: rgb(37, 105, 162);
+            color: rgb(24, 90, 146);
+            border-color: rgb(24, 90, 146);
+            cursor: not-allowed;
+        }
+        .btn-upload-file.info:hover,
+        .btn-upload-file.info:focus{
+            background: rgb(91, 192, 222);
+            color: rgb(43, 135, 162);
+            border-color: rgb(60, 171, 204);
+            cursor: not-allowed;
+        }
+        .btn-upload-file.ready-to-upload{
+            background: rgb(37, 105, 162);
+            border-color: rgb(24, 90, 146);
+            color: rgb(255,255,255);
+        }
+        .btn-upload-file:hover.ready-to-upload,
+        .btn-upload-file:focus.ready-to-upload{
+            background-color: rgb(21, 79, 129);
+            cursor: pointer;
+        }
+        
+        .btn-upload-file.with-attachment{
+            background: rgb(20,128,140);
+            border-color: rgb(24,90,146);
+            border-color: rgb(31, 149, 162);
+            color: rgb(255,255,255);
+        }
+        .btn-upload-file:hover.with-attachment,
+        .btn-upload-file:focus.with-attachment{
+            background-color: rgb(16, 101, 110);
+            cursor: pointer;
+        }
+
+        .btn-upload-file.disabled{
+            background: rgb(212, 212, 212);
+            color: rgb(100,100,100);
+            border-color: rgb(161, 161, 161);
+        }
+        .btn-upload-file:hover.disabled,
+        .btn-upload-file:focus.disabled{
+            background: rgb(212, 212, 212);
+            color: rgb(100,100,100);
+            border-color: rgb(161, 161, 161);
+            cursor: not-allowed;
+        }
+
+        .btn-view-file{
+            display: table-cell;
+            width: 30px;
+            border-left: none;
+            text-align: center;
+            font-size: 16px;
+            padding-left: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            vertical-align: middle;
+            background: rgb(20,128,140);
+            border-color: rgb(24,90,146);
+            border-color: rgb(31, 149, 162);
+            color: rgb(255,255,255);
+        }
+        .btn-view-file:hover,
+        .btn-view-file:focus{
+            background-color: rgb(16, 101, 110);
+            color: rgb(255,255,255);
+            cursor: pointer;
+        }
+
+        .input-file-hidden{
+            visibility: hidden;
+            position: absolute;
+            left: -99999px;
+        }
+        .progress-bar-container{
+            position: absolute;
+            z-index: 10;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            /* opacity: 0.85; */
+            left: 0px;
+        }
+        .progress.checklist{
+            height: 30px;
+            margin-bottom: 0px;
+            /* width: 100%;*/
+            background: rgb(37, 105, 162);
+            border: 1px solid rgb(24, 90, 146);
+        }
+        .progress.checklist .progress-bar{
+            line-height: 30px;
+            min-width: 10px;
+            background-color: rgb(31, 126, 208);
+        }
+        .progress-striped .progress-bar,
+        .progress-bar-striped {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .85) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .85) 50%, rgba(255, 255, 255, .85) 75%, transparent 75%, transparent);
+            background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .85) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .85) 50%, rgba(255, 255, 255, .85) 75%, transparent 75%, transparent);
+            background-image:         linear-gradient(45deg, rgba(255, 255, 255, .85) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .85) 50%, rgba(255, 255, 255, .85) 75%, transparent 75%, transparent);
+            -webkit-background-size: 40px 40px;
+            background-size: 40px 40px;
+        }
+
+        .history-entries-toggle{
+            padding: 5px;
+            border: 0px solid rgb(190, 190, 190);
+            border-bottom: 1px solid rgb(190, 190, 190);
+            color: rgb(5,5,5);
+            cursor: pointer;
+        }
+        .history-entries-toggle:hover{
+            border: 1px solid rgb(46, 135, 161);
+            border-bottom: none;
+            background: rgb(91, 192, 222);
+            box-shadow: 0px 2px 0px rgb(46, 135, 161);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .history-entries-toggle.active{
+            border: 1px solid rgb(46, 135, 161);
+            /*border-bottom: none;*/
+            background: rgb(91, 192, 222);
+            /*box-shadow: 0px 2px 0px rgb(46, 135, 161);*/
+            color: rgb(255, 255, 255);
+        }
+        .history-entries-toggle.active:hover{
+            border: 1px solid rgb(46, 135, 161);
+            border-bottom: none;
+            background: rgb(91, 192, 222);
+            box-shadow: 0px 2px 0px rgb(46, 135, 161);
+            color: rgb(255, 255, 255);
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+        .history-entries-content{
+            padding: 10px;
+            background: rgb(240,240,240);
+            border: 1px solid rgb(46, 135, 161);
+            border-top-color: rgb(255,255,255);
+        }
+        .graph-no-data{
+            display: table;
+            width: 100%;
+        }
+        .graph-no-data-container{
+            color: rgb(70, 70, 70);
+            height: 400px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .graph-no-data-icon{
+            font-size: 200px; 
+            line-height: 200px; 
+            text-align: center;
+        }
+        .graph-no-data-text{
+            text-align: center;
+            font-size: 20px;
+            color: rgb(101, 101, 101);
+        }
+        .respuesta-indicador{
+            padding: 15px;
+            font-weight: 600;
+        }
+        .respuesta-indicador.no-data{
+            color: rgb(197, 23, 23)
+        }
+        .no-margin-bottom{
+            margin-bottom: 0px !important;
+        }
+        .subindicador-container{
+            padding-left: 25px !important;
+        }
+        .subindicador-separator{
+            border-top: 1px dashed rgb(90,90,90);
+        }
+        .panel-propuesta .form-control[disabled], /*
+        .panel-propuesta .form-control[readonly],*/ 
+        .panel-propuesta fieldset[disabled] .form-control{
+            cursor: not-allowed;
+            background-color: rgb(247, 241, 224);
+            opacity: 1;
+        }
+        .label-normal{
+            font-size: 12px !important;
+        }
+        label.indicador-option{
+            display: inline-block;
+            width: 100%;
+            background: rgb(230, 230, 230);
+            padding: 15px;
+        }
+        #titulo_evaluacion{
+            z-index: 1000 !important;
+            background: rgb(255,255,255);
+        }
+        .sticky-wrapper.is-sticky #titulo_evaluacion {
+            box-shadow: 0px 1px 2px rgb(5,5,5);
+            text-align: center;
+            width: 100% !important;
+            left: 0px;
+        }
+
+        .gravedad-20,
+        .gravedad-40,
+        .gravedad-60,
+        .gravedad-80,
+        .gravedad-100{
+            color: rgb(255,255,255) !important;
+        }
+        .gravedad-20{
+            background-color: rgb(66, 139, 202) !important;
+        }
+        .gravedad-40{
+            background-color: rgb(92, 184, 92) !important;
+        }
+        .gravedad-60{
+            background-color: rgb(240, 173, 78) !important;
+        }
+        .gravedad-80{
+            background-color: rgb(240, 123, 78) !important;
+        }
+        .gravedad-100{
+            background-color: rgb(216, 73, 69) !important;
+        }
+        .texto-gravedad-20{
+            color: rgb(38, 132, 214) !important;
+        }
+        .texto-gravedad-40{
+            color: rgb(76, 175, 80) !important;
+        }
+        .texto-gravedad-60{
+            color: rgb(255, 204, 7) !important;/*rgb(249, 246, 149)*/
+        }
+        .texto-gravedad-80{
+            color: rgb(255, 87, 34) !important;
+        }
+        .texto-gravedad-100{
+            color: rgb(220, 43, 38) !important;
+        }
+        a.trigger-accordion{
+            width: 100% !important;
+            display: inline-block;
+        }
+        .container-add-case{
+            background: rgb(206, 206, 206);
+            margin-bottom: 15px;
+            margin-top: 5px;
+            padding: 15px 5px 15px 5px;
+            width: 98%;
+        }
+        .case-score{
+            font-weight: bold;
+            display: inline-block;
+            float: right;
+        }
+        .panel-title-score{
+            font-weight: bold;
+        }
+        .fake-input.disabled{
+            cursor: not-allowed;
+            background-color: rgb(247, 241, 224);
+            font-size: 12px;
+        }
+        .has-panel-inside{
+            padding: 15px !important;
+        }

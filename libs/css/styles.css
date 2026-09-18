@@ -1,0 +1,1961 @@
+:root {
+    --breakpoint-xs              : 400px;
+    --breakpoint-sm              : 600px;
+    --breakpoint-md              : 800px;
+    --breakpoint-lg              : 1000px;
+    --breakpoint-xl              : 1200px;
+    --title-area-padding-mobile  : 16px;
+    --header-shrink-offset       : 17px;
+    --body-font-family           : Georgia, Times, "Times New Roman", serif;
+    --body-font-weight-bold      : bold;
+    --heading-font-family        : Oswald;
+    --heading-font-weight        : 400;
+    --color-black                : #000000;
+    --color-white                : #ffffff;
+    --color-header               : #ffffff;
+    --color-background           : #ffffff;
+    --color-alt                  : #fffae6;
+    --color-body                 : #252525;
+    --color-heading              : #280058;
+    --color-link                 : #0b7104;
+    --color-link-light           : #0f9906;
+    --color-link-dark            : #064002;
+    --color-primary              : #280058;
+    --color-primary-light        : #390080;
+    --color-primary-dark         : #100024;
+    --color-secondary            : #fffae6;
+    --color-secondary-light      : #ffffff;
+    --color-secondary-dark       : #fff0b3;
+    --color-custom-1             : #fcd900;
+    --color-custom-2             : #e5a204;
+    --color-custom-3             : #61200c;
+    --color-custom-4             : #2e1c44;
+    --button-color               : var(--color-white);
+    --button-secondary-color     : #b38f00;
+    --button-link-url            : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');
+    --pagination-next-url        : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');
+    --pagination-previous-url    : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-left.svg');
+    --entry-next-url             : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');
+    --entry-previous-url         : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-left.svg');
+    --search-url                 : url('https://ladymoonfarms.com/wp-content/plugins/mai-icons/icons/svgs/regular/search.svg');
+    --page-header-background     : #000000;
+    --page-header-overlay-opacity: 0.1;
+    --page-header-padding-top    : 3vw;
+    --page-header-padding-bottom : 3vw;
+    --page-header-inner-max-width: var(--breakpoint-md);
+    --page-header-justify-content: center;
+    --page-header-text-align     : center;
+}
+
+body {
+    /* background-color: #f1f7fc; */
+    background-color  : #f1f7fc;
+    /*background-image: url("../libs/imgs/background.jpg");*/
+    padding-top       : 100px !important;
+    /*background      : rgb(230, 237, 241) none repeat;*/
+    background-color  : #fff;
+}
+
+/*
+---------------------------------------------------------
+Estilos de Nav Bar
+ */
+#menu_navbar.navbar-defecto .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+
+#menu_navbar.navbar-defecto {
+    font-size          : 14px;
+    background-color   : rgba(10, 10, 10, 1);
+    border-bottom-width: 0px;
+}
+
+#menu_navbar.navbar-defecto .navbar-nav>li>a {
+    color           : rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+
+#menu_navbar.navbar-defecto .navbar-nav>li>a:hover,
+#menu_navbar.navbar-defecto .navbar-nav>li>a:focus {
+    color           : rgba(0, 0, 0, 1);
+    background-color: rgba(248, 248, 248, 1);
+}
+
+#menu_navbar.navbar-defecto .navbar-nav>.active>a,
+#menu_navbar.navbar-defecto .navbar-nav>.active>a:hover,
+#menu_navbar.navbar-defecto .navbar-nav>.active>a:focus {
+    color           : rgba(0, 0, 0, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#menu_navbar.navbar-defecto .navbar-toggle {
+    border-color: #ddd;
+}
+
+#menu_navbar.navbar-defecto .navbar-toggle:hover,
+#menu_navbar.navbar-defecto .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+#menu_navbar.navbar-defecto .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+#menu_navbar.navbar-defecto .navbar-toggle:hover .icon-bar,
+#menu_navbar.navbar-defecto .navbar-toggle:focus .icon-bar {
+    background-color: #0a0a0a;
+}
+
+/*
+--------------------------------------------------------------------
+ */
+
+.btn-huge {
+    padding-top   : 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-nav {
+        display: inline-block !important;
+        float  : none !important;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .dropdown-menu>li>a {
+        color: black;
+    }
+
+    .tipo-modulo {
+        color: black;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background-color: white;
+    }
+}
+
+/*--Upload--*/
+.row-with-attachment {
+    cursor          : not-allowed !important;
+    background-color: rgb(42, 160, 148);
+    border-color    : rgb(23, 121, 111);
+    background-color: rgb(50, 50, 50) !important;
+    border-color    : rgb(35, 35, 35) !important;
+}
+
+.container-upload-box {
+    width          : 100%;
+    display        : table;
+    border-collapse: separate;
+}
+
+.btn-select-file {
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 0px;
+    border-bottom-right-radius: 0px;
+    background                : rgb(37, 105, 162);
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-select-file.ready-to-upload {
+    background: rgb(140, 197, 245);
+    border    : 1px solid rgb(24, 90, 146);
+    color     : rgb(14, 68, 113);
+}
+
+.btn-select-file.with-attachment {
+    background: rgb(20, 128, 140);
+    border    : 1px solid rgb(24, 90, 146);
+    border    : 1px solid rgb(31, 149, 162);
+    color     : rgb(255, 255, 255);
+}
+
+.btn-select-file.disabled {
+    background: rgb(212, 212, 212);
+    border    : 1px solid rgb(161, 161, 161);
+    color     : rgb(100, 100, 100);
+    cursor    : not-allowed;
+}
+
+.btn-delete-file {
+    display                   : table-cell;
+    width                     : 30px;
+    background                : rgb(37, 105, 162);
+    color                     : rgb(24, 90, 146);
+    border                    : 1px solid rgb(24, 90, 146);
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+}
+
+.btn-delete-file:hover,
+.btn-delete-file:focus {
+    background  : rgb(37, 105, 162);
+    color       : rgb(24, 90, 146);
+    border-color: rgb(24, 90, 146);
+    cursor      : not-allowed;
+}
+
+.btn-delete-file.ready-to-upload {
+    background  : rgb(37, 105, 162);
+    border-color: rgb(24, 90, 146);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-delete-file:hover.ready-to-upload,
+.btn-delete-file:focus.ready-to-upload {
+    background-color: rgb(21, 79, 129);
+    cursor          : pointer;
+}
+
+.btn-delete-file.with-attachment {
+    background  : rgb(20, 128, 140);
+    border-color: rgb(24, 90, 146);
+    border-color: rgb(31, 149, 162);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-delete-file:hover.with-attachment,
+.btn-delete-file:focus.with-attachment {
+    background-color: rgb(16, 101, 110);
+    cursor          : pointer;
+}
+
+.btn-delete-file.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+}
+
+.btn-delete-file:hover.disabled,
+.btn-delete-file:focus.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+    cursor      : not-allowed;
+}
+
+.btn-view-file {
+    display                   : table-cell;
+    width                     : 30px;
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+    background                : rgb(20, 128, 140);
+    border-color              : rgb(24, 90, 146);
+    border-color              : rgb(31, 149, 162);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-view-file:hover,
+.btn-view-file:focus {
+    background-color: rgb(16, 101, 110);
+    color           : rgb(255, 255, 255);
+    cursor          : pointer;
+}
+
+.input-file-hidden {
+    visibility: hidden;
+    position  : absolute;
+    left      : -99999px;
+}
+
+/*--------------------------------------------------------------------*/
+.btn-fileupload-incrustated {
+    /*margin-top: -30px;
+        bottom: 0px;
+        height: 30px;*/
+    width                      : 80%;
+    /*
+        border-top-right-radius: 0px;
+        border-top-left-radius : 0px;*/
+}
+
+.btn-img {
+    position: absolute;
+    bottom  : 15px;
+    width   : 10%;
+    height  : 30px;
+    right   : 15px;
+    z-index : 1;
+    padding : 5px;
+}
+
+@media (max-width: 991px) {
+    .btn-img {
+        bottom: 0px;
+    }
+}
+
+.btn-upload {
+    position: absolute;
+    bottom  : 15px;
+    width   : 10%;
+    height  : 30px;
+    right   : 45px;
+    z-index : 1;
+    padding : 5px;
+}
+
+@media (max-width: 991px) {
+    .btn-upload {
+        bottom: 0px;
+    }
+}
+
+.container-upload-box {
+    width          : 100%;
+    display        : table;
+    border-collapse: separate;
+}
+
+.btn-select-file {
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 0px;
+    border-bottom-right-radius: 0px;
+    background                : rgb(37, 105, 162);
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-select-file.ready-to-upload {
+    background: rgb(140, 197, 245);
+    border    : 1px solid rgb(24, 90, 146);
+    color     : rgb(14, 68, 113);
+}
+
+.btn-select-file.with-attachment {
+    background: rgb(20, 128, 140);
+    border    : 1px solid rgb(24, 90, 146);
+    border    : 1px solid rgb(31, 149, 162);
+    color     : rgb(255, 255, 255);
+}
+
+.btn-select-file.disabled {
+    background: rgb(212, 212, 212);
+    border    : 1px solid rgb(161, 161, 161);
+    color     : rgb(100, 100, 100);
+    cursor    : not-allowed;
+}
+
+.btn-upload-file {
+    display                   : table-cell;
+    width                     : 30px;
+    background                : rgb(37, 105, 162);
+    color                     : rgb(24, 90, 146);
+    border                    : 1px solid rgb(24, 90, 146);
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+}
+
+.btn-upload-file:hover,
+.btn-upload-file:focus {
+    background  : rgb(37, 105, 162);
+    color       : rgb(24, 90, 146);
+    border-color: rgb(24, 90, 146);
+    cursor      : not-allowed;
+}
+
+.btn-upload-file.ready-to-upload {
+    background  : rgb(37, 105, 162);
+    border-color: rgb(24, 90, 146);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-upload-file:hover.ready-to-upload,
+.btn-upload-file:focus.ready-to-upload {
+    background-color: rgb(21, 79, 129);
+    cursor          : pointer;
+}
+
+.btn-upload-file.with-attachment {
+    background  : rgb(20, 128, 140);
+    border-color: rgb(24, 90, 146);
+    border-color: rgb(31, 149, 162);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-upload-file:hover.with-attachment,
+.btn-upload-file:focus.with-attachment {
+    background-color: rgb(16, 101, 110);
+    cursor          : pointer;
+}
+
+.btn-upload-file.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+}
+
+.btn-upload-file:hover.disabled,
+.btn-upload-file:focus.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+    cursor      : not-allowed;
+}
+
+.btn-view-file {
+    display                       : table-cell;
+    width                         : 30px;
+    border-left                   : none;
+    text-align                    : center;
+    font-size                     : 16px;
+    padding-left                  : 4px;
+    /*border-top-right-radius     : 4px;
+        border-bottom-right-radius: 4px;*/
+    vertical-align                : middle;
+    background                    : rgb(20, 128, 140);
+    border-color                  : rgb(24, 90, 146);
+    border-color                  : rgb(31, 149, 162);
+    color                         : rgb(255, 255, 255);
+}
+
+.btn-view-file:hover,
+.btn-view-file:focus {
+    background-color: rgb(16, 101, 110);
+    color           : rgb(255, 255, 255);
+    cursor          : pointer;
+}
+
+.btn-view-file-delete {
+
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+    background                : #d9534f;
+    border-color              : #ac2925;
+}
+
+.btn-view-file-delete:hover,
+.btn-view-file-delete:focus {
+    background-color: #c9302c;
+    color           : #fff;
+    cursor          : pointer;
+}
+
+.input-file-hidden {
+    visibility: hidden;
+    position  : absolute;
+    left      : -99999px;
+}
+
+#tabla_datos_beca_activa {
+    font-size: 12px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#container_fotografia input.file {
+    visibility: hidden;
+    display   : none;
+}
+
+/*--Upload--*/
+
+
+
+#container_fotografia input.file {
+    visibility: hidden;
+    display   : none;
+}
+
+.bubble-timeline {
+    display         : inline-block;
+    background-color: rgb(77, 178, 208);
+    border-radius   : 50%;
+    line-height     : 2em;
+    max-width       : 220px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.icon-timeline-container {
+    background-color: rgb(77, 178, 208);
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.img-timeline {
+    width             : 100%;
+    /*background-color: rgb(77, 178, 208);
+	border               : 3px solid rgb(255, 255, 255);*/
+    border-radius     : 50%;
+    display           : inline-block;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+
+/*---------------------------------------
+
+Estilos para Material Switch
+----------------------------------------*/
+.material-switch>input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch>label {
+    cursor  : pointer;
+    height  : 15px;
+    position: relative;
+    width   : 40px;
+}
+
+.material-switch>label::before {
+    background   : rgb(0, 0, 0);
+    box-shadow   : inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content      : '';
+    height       : 12px;
+    margin-top   : 4px;
+    position     : absolute;
+    opacity      : 0.3;
+    transition   : all 0.4s ease-in-out;
+    width        : 40px;
+}
+
+.material-switch>label::after {
+    background   : rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow   : 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content      : '';
+    height       : 18px;
+    left         : -2px;
+    margin-top   : 4px;
+    position     : absolute;
+    top          : -2px;
+    transition   : all 0.3s ease-in-out;
+    width        : 24px;
+}
+
+.material-switch>input[type="checkbox"]:checked+label::before {
+    background      : inherit;
+    background-color: rgb(0, 0, 0);
+    opacity         : 0.5;
+}
+
+.material-switch>input[type="checkbox"]:checked+label::after {
+    background      : inherit;
+    background-color: #5bc0de;
+    left            : 20px;
+}
+
+.material-switch>.checkbox-translate::after {
+    background   : rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow   : 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content      : '';
+    height       : 18px;
+    left         : 20px;
+    margin-top   : 4px;
+    position     : absolute;
+    top          : -2px;
+    transition   : all 0.3s ease-in-out;
+    width        : 24px;
+}
+
+.material-switch>input[type="checkbox"]:checked+.checkbox-translate::after {
+    background      : inherit;
+    background-color: #5bc0de;
+    left            : 40px;
+}
+
+/*-------------------------------------------------
+Estilos varios
+-----------------------------------------------------*/
+.row-with-attachment {
+    background-color: rgb(42, 160, 148);
+    border-color    : rgb(23, 121, 111);
+    background-color: rgb(255, 255, 255) !important;
+    border-color    : rgb(35, 35, 35) !important;
+}
+
+.container-upload-box {
+    width           : 100%;
+    display         : table;
+    border-collapse : separate;
+    background-color: rgb(255, 255, 255);
+    padding-bottom  : 15px;
+}
+
+.btn-select-file {
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 0px;
+    border-bottom-right-radius: 0px;
+    background                : rgb(37, 105, 162);
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-select-file.ready-to-upload {
+    background: rgb(140, 197, 245);
+    border    : 1px solid rgb(24, 90, 146);
+    color     : rgb(14, 68, 113);
+}
+
+.btn-select-file.with-attachment {
+    background: rgb(20, 128, 140);
+    border    : 1px solid rgb(24, 90, 146);
+    border    : 1px solid rgb(31, 149, 162);
+    color     : rgb(255, 255, 255);
+}
+
+.btn-select-file.disabled {
+    background: rgb(212, 212, 212);
+    border    : 1px solid rgb(161, 161, 161);
+    color     : rgb(100, 100, 100);
+    cursor    : not-allowed;
+}
+
+.btn-delete-file {
+    display                   : table-cell;
+    width                     : 30px;
+    background                : rgb(37, 105, 162);
+    color                     : rgb(24, 90, 146);
+    border                    : 1px solid rgb(24, 90, 146);
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+}
+
+.btn-delete-file:hover,
+.btn-delete-file:focus {
+    background  : rgb(37, 105, 162);
+    color       : rgb(24, 90, 146);
+    border-color: rgb(24, 90, 146);
+    cursor      : not-allowed;
+}
+
+.btn-delete-file.ready-to-upload {
+    background  : rgb(37, 105, 162);
+    border-color: rgb(24, 90, 146);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-delete-file:hover.ready-to-upload,
+.btn-delete-file:focus.ready-to-upload {
+    background-color: rgb(21, 79, 129);
+    cursor          : pointer;
+}
+
+.btn-delete-file.with-attachment {
+    background  : rgb(20, 128, 140);
+    border-color: rgb(24, 90, 146);
+    border-color: rgb(31, 149, 162);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-delete-file:hover.with-attachment,
+.btn-delete-file:focus.with-attachment {
+    background-color: rgb(16, 101, 110);
+    cursor          : pointer;
+}
+
+.btn-delete-file.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+}
+
+.btn-delete-file:hover.disabled,
+.btn-delete-file:focus.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+    cursor      : not-allowed;
+}
+
+.btn-view-file {
+    display                   : table-cell;
+    width                     : 30px;
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+    background                : rgb(20, 128, 140);
+    border-color              : rgb(24, 90, 146);
+    border-color              : rgb(31, 149, 162);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-view-file:hover,
+.btn-view-file:focus {
+    background-color: rgb(16, 101, 110);
+    color           : rgb(255, 255, 255);
+    cursor          : pointer;
+}
+
+.input-file-hidden {
+    visibility: hidden;
+    position  : absolute;
+    left      : -99999px;
+}
+
+/*--------------------------------------------------------------------*/
+.btn-fileupload-incrustated {
+    width: 80%;
+}
+
+.btn-img {
+    position: absolute;
+    bottom  : 15px;
+    width   : 10%;
+    height  : 30px;
+    right   : 15px;
+    z-index : 1;
+    padding : 5px;
+}
+
+@media (max-width: 991px) {
+    .btn-img {
+        bottom: 0px;
+    }
+}
+
+.btn-upload {
+    position: absolute;
+    bottom  : 15px;
+    width   : 10%;
+    height  : 30px;
+    right   : 45px;
+    z-index : 1;
+    padding : 5px;
+}
+
+@media (max-width: 991px) {
+    .btn-upload {
+        bottom: 0px;
+    }
+}
+
+.container-upload-box {
+    width          : 100%;
+    display        : table;
+    border-collapse: separate;
+}
+
+.btn-select-file {
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 0px;
+    border-bottom-right-radius: 0px;
+    background                : rgb(37, 105, 162);
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+}
+
+.btn-select-file.ready-to-upload {
+    background: rgb(140, 197, 245);
+    border    : 1px solid rgb(24, 90, 146);
+    color     : rgb(14, 68, 113);
+}
+
+.btn-select-file.with-attachment {
+    background: rgb(20, 128, 140);
+    border    : 1px solid rgb(24, 90, 146);
+    border    : 1px solid rgb(31, 149, 162);
+    color     : rgb(255, 255, 255);
+}
+
+.btn-select-file.disabled {
+    background: rgb(212, 212, 212);
+    border    : 1px solid rgb(161, 161, 161);
+    color     : rgb(100, 100, 100);
+    cursor    : not-allowed;
+}
+
+.btn-upload-file {
+    display                   : table-cell;
+    width                     : 30px;
+    background                : rgb(37, 105, 162);
+    color                     : rgb(24, 90, 146);
+    border                    : 1px solid rgb(24, 90, 146);
+    border-left               : none;
+    text-align                : center;
+    font-size                 : 16px;
+    padding-left              : 4px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align            : middle;
+}
+
+.btn-upload-file:hover,
+.btn-upload-file:focus {
+    background  : rgb(37, 105, 162);
+    color       : rgb(24, 90, 146);
+    border-color: rgb(24, 90, 146);
+    cursor      : not-allowed;
+}
+
+.btn-upload-file.ready-to-upload {
+    background  : rgb(37, 105, 162);
+    border-color: rgb(24, 90, 146);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-upload-file:hover.ready-to-upload,
+.btn-upload-file:focus.ready-to-upload {
+    background-color: rgb(21, 79, 129);
+    cursor          : pointer;
+}
+
+.btn-upload-file.with-attachment {
+    background  : rgb(20, 128, 140);
+    border-color: rgb(24, 90, 146);
+    border-color: rgb(31, 149, 162);
+    color       : rgb(255, 255, 255);
+}
+
+.btn-upload-file:hover.with-attachment,
+.btn-upload-file:focus.with-attachment {
+    background-color: rgb(16, 101, 110);
+    cursor          : pointer;
+}
+
+.btn-upload-file.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+}
+
+.btn-upload-file:hover.disabled,
+.btn-upload-file:focus.disabled {
+    background  : rgb(212, 212, 212);
+    color       : rgb(100, 100, 100);
+    border-color: rgb(161, 161, 161);
+    cursor      : not-allowed;
+}
+
+.btn-view-file {
+    display       : table-cell;
+    width         : 30px;
+    border-left   : none;
+    text-align    : center;
+    font-size     : 16px;
+    padding-left  : 4px;
+    vertical-align: middle;
+    background    : rgb(20, 128, 140);
+    border-color  : rgb(24, 90, 146);
+    border-color  : rgb(31, 149, 162);
+    color         : rgb(255, 255, 255);
+}
+
+.btn-view-file:hover,
+.btn-view-file:focus {
+    background-color: rgb(16, 101, 110);
+    color           : rgb(255, 255, 255);
+    cursor          : pointer;
+}
+
+.btn-view-file-delete {
+    display                   : table-cell;
+    width                     : 100%;
+    height                    : 30px;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
+    border                    : 1px solid rgb(24, 90, 146);
+    color                     : rgb(255, 255, 255);
+    background                : #d9534f;
+    border-color              : #ac2925;
+}
+
+.btn-view-file-delete:hover,
+.btn-view-file-delete:focus {
+    background-color: #c9302c;
+    color           : #fff;
+    cursor          : pointer;
+}
+
+.input-file-hidden {
+    visibility: hidden;
+    position  : absolute;
+    left      : -99999px;
+}
+
+#tabla_datos_beca_activa {
+    font-size: 12px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#container_fotografia input.file {
+    visibility: hidden;
+    display   : none;
+}
+
+.bubble-timeline {
+    display         : inline-block;
+    background-color: rgb(77, 178, 208);
+    border-radius   : 50%;
+    line-height     : 2em;
+    max-width       : 220px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.icon-timeline-container {
+    background-color: rgb(77, 178, 208);
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.img-timeline {
+    width             : 100%;
+    /*background-color: rgb(77, 178, 208);
+        border        : 3px solid rgb(255, 255, 255);*/
+    border-radius     : 50%;
+    display           : inline-block;
+}
+
+.estado1 {
+    background-color: #2888A8;
+    color           : white;
+}
+
+.estado2 {
+    background-color: #2951B2;
+    color           : white;
+}
+
+.estado3 {
+    background-color: #522CBD;
+    color           : white;
+}
+
+.estado4 {
+    background-color: #AB30C7;
+    color           : white;
+}
+
+.estado5 {
+    background-color: #D03797;
+    color           : white;
+}
+
+.estado6 {
+    background-color: #658E9C;
+    color           : white;
+}
+
+.estado7 {
+    background-color: #E18B4D;
+    color           : white;
+}
+
+.estado8 {
+    background-color: #32936F;
+    color           : white;
+}
+
+.estado9 {
+    background-color: #D94246;
+    color           : white;
+}
+
+.estado10 {
+    background-color: #FFBF00;
+    color           : white;
+}
+
+.estado11 {
+    background-color: #E83F6F;
+    color           : white;
+}
+
+.estado12 {
+    background-color: #2274A5;
+    color           : white;
+}
+
+.estado13 {
+    background-color: #2EC4B6;
+    color           : white;
+}
+
+.table {
+    font-size: 14px !important;
+}
+
+@media (max-width: 991px) {
+    .btn-upload {
+        bottom: 0px;
+    }
+
+    .btn-left {
+        border-radius: 5px 0 0 5px;
+        width        : 50%;
+        padding      : 5px;
+    }
+
+    .btn-center-left {
+        border-radius: 0 5px 5px 0;
+        width        : 50%;
+        padding      : 5px;
+    }
+
+    .btn-center {
+        border-radius: 0 0 0 0;
+        width        : 50%;
+        padding      : 5px;
+    }
+
+    .btn-center-right {
+        border-radius: 5px 0 0 5px;
+        width        : 50%;
+        padding      : 5px;
+    }
+
+    .btn-right {
+        border-radius: 0 5px 5px 0;
+        width        : 50%;
+        padding      : 5px;
+    }
+
+    .btn-right-solo {
+        border-radius: 5px 5px 5px 5px;
+        width        : 100%;
+        padding      : 5px;
+    }
+}
+
+@media (min-width: 991px) {
+    .btn-left {
+        border-radius: 5px 0 0 5px;
+        width        : 25%;
+        padding      : 5px;
+    }
+
+    .btn-center-left {
+        border-radius: 0;
+        width        : 25%;
+        padding      : 5px;
+    }
+
+    .btn-center-right {
+        border-radius: 0;
+        width        : 25%;
+        padding      : 5px;
+    }
+
+    .btn-center {
+        border-radius: 0;
+        width        : 25%;
+        padding      : 5px;
+    }
+
+    .btn-right,
+    .btn-right-solo {
+        border-radius: 0 5px 5px 0;
+        width        : 25%;
+        padding      : 5px;
+    }
+}
+
+.btncollapsepaso {
+    cursor: pointer;
+}
+
+#loader {
+    position: absolute;
+    left    : 50%;
+    top     : 50%;
+    z-index : 1;
+    width   : 150px;
+    height  : 150px;
+    margin  : -75px 0 0 -75px;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position                  : relative;
+    -webkit-animation-name    : animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name            : animatebottom;
+    animation-duration        : 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom : -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom : 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom : -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom : 0;
+        opacity: 1
+    }
+}
+
+/*
+    * Estilos traidos del archivo DASHBOARD
+*/
+.row {
+    padding: 0 10px;
+}
+
+.panel_cabecera div {
+    margin-top: -18px;
+    font-size : 15px;
+}
+
+.panel_cabecera div span {
+    margin-left: 5px;
+}
+
+.panel_cuerpo {
+    display: none;
+}
+
+.contenedor_cuerpo {
+    margin-left     : 2%;
+    margin-right    : 2%;
+    padding-left    : 0;
+    padding-right   : 0;
+    width           : 96%;
+    background-color: #fff;
+}
+
+#dev-table {
+    font-size: 12px;
+}
+
+.jumbotron {
+    background-color: #eee;
+    color           : inherit;
+    margin-bottom   : 30px;
+    padding         : 30px;
+}
+
+.top_nav {
+    background-color: #1C1C1C;
+    border-color    : #1C1C1C;
+}
+
+.top_nav>#a {
+    text-decoration: #ffffff;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+}
+
+.navbar-nav>li,
+.navbar-nav {
+    float: left;
+}
+
+
+.icono_blanco {
+    color: white;
+}
+
+@media(min-width: 336px) {
+    .nav.navbar-nav {
+        width  : 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu>li>a {
+        color: black;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background-color: white;
+    }
+
+    .navbar-translate {
+        padding-top   : 8px !important;
+        padding-bottom: 0px;
+    }
+
+    .icono_blanco {
+        /*padding: 10px 10px!important;*/
+    }
+
+    .label-translate {
+        margin-left : 0 !important;
+        margin-right: 5px !important;
+    }
+}
+
+.li_height {
+    padding-top: 3px;
+}
+
+
+.panel_cuerpo {
+    background-color: #2ea3f2;
+}
+
+.panel_cabecera {
+    text-align     : center;
+    /*
+    text-decoration: underline;*/
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table td {
+    border-top-color: rgb(150, 150, 150) !important;
+}
+
+.panel-propuesta2 {
+    background  : rgb(230, 237, 241);
+    border-color: rgb(50, 50, 50);
+    height      : 38px;
+}
+
+.panel-heading-propuesta2 {
+    margin-bottom: 10px;
+    background   : rgb(31, 54, 68) !important;
+    border-color : rgb(50, 50, 50) !important;
+}
+
+.panel-title.main {
+    text-transform: uppercase !important;
+}
+
+.btn-toggle-table {
+    color     : rgb(255, 255, 255);
+    background: transparent;
+    background: rgba(0, 0, 0, 0);
+    font-size : 1.2em;
+    padding   : 0;
+}
+
+.btn-toggle-table:hover,
+.btn-toggle-table:focus {
+    color: rgb(177, 207, 222);
+}
+
+.panel-grafico {
+    background  : none;
+    border      : none;
+    padding     : 0;
+    border-color: transparent;
+}
+
+.bubble-timeline {
+    display         : inline-block;
+    background-color: rgb(77, 178, 208);
+    border-radius   : 50%;
+    line-height     : 2em;
+    /*max-width     : 150px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.icon-timeline-container {
+    background-color: rgb(77, 178, 208);
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.img-timeline {
+    width             : 100%;
+    /*background-color: rgb(77, 178, 208);
+    border            : 3px solid rgb(255, 255, 255);*/
+    border-radius     : 50%;
+    display           : inline-block;
+}
+
+.label-block {
+    display    : block;
+    white-space: pre-wrap !important;
+    font-size  : 12px !important;
+}
+
+.label-bordes-abajo {
+    border-radius: 0 0 5px 5px !important;
+    margin-bottom: 15px;
+}
+
+.label-bordes-arriba {
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.label-estado {
+    border-radius: 0px !important;
+}
+
+.td_back_white {
+    background-color: white;
+}
+
+.bubble-timeline_en_proceso {
+    display         : inline-block;
+    background-color: #5bc0de !important;
+    border-radius   : 50%;
+    line-height     : 2em;
+    max-width       : 150px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.bubble-timeline_suspendidos {
+    display         : inline-block;
+    background-color: #d9534f !important;
+    border-radius   : 50%;
+    line-height     : 2em;
+    max-width       : 150px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.bubble-timeline_incapacitados {
+    display         : inline-block;
+    background-color: #E8DD43 !important;
+    border-radius   : 50%;
+    line-height     : 2em;
+    max-width       : 150px;
+    /*border        : 2px solid rgb(255, 255, 255);*/
+    padding         : 2px;
+    margin-bottom   : 15px;
+    margin-top      : 15px;
+}
+
+.icon-timeline-container_en_proceso {
+    background-color: #5bc0de !important;
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.icon-timeline-container_suspendidos {
+    background-color: #d9534f !important;
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.icon-timeline-container_incapacitados {
+    background-color: #E8DD43 !important;
+    border          : 3px solid rgb(255, 255, 255);
+    border-radius   : 50%;
+    display         : inline-block;
+}
+
+.label-nombre {
+    margin-top   : -10px;
+    margin-bottom: 15px;
+    display      : inline-block;
+    width        : 100%;
+}
+
+.label-grado {
+    padding   : .2em 1em .3em;
+    display   : inline-block;
+    font-size : 12px;
+    background: none;
+    border-top: 2px solid rgb(51, 51, 51);
+    text-align: left;
+    width     : auto;
+    color     : rgb(20, 20, 20);
+}
+
+.label-asignacion {
+    padding   : .2em 1em .3em;
+    display   : inline-block;
+    background: none;
+    font-size : 12px;
+    border-top: 2px solid rgb(51, 51, 51);
+    text-align: left;
+    width     : auto;
+    color     : rgb(20, 20, 20);
+}
+
+.p_nombre {
+    font-size    : 16px;
+    font-weight  : 600;
+    border-bottom: 1px solid;
+}
+
+.p_grado {
+    margin-bottom: 0px;
+    font-weight  : 600;
+    font-style   : italic;
+}
+
+.p_asignacion {
+    font-weight  : 600;
+    font-style   : italic;
+    margin-top   : 10px;
+    margin-bottom: 0px;
+    background   : transparent;
+}
+
+.p_azul {
+    color      : #428bca;
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    text-align : left;
+    width      : 100%;
+    padding-top: 5px;
+}
+
+.p_verde {
+    color      : #5cb85c;
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    text-align : left;
+    width      : 100%;
+    padding-top: 5px;
+}
+
+.p_amarillo {
+    color      : #E8DD43;
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    text-align : left;
+    width      : 100%;
+    padding-top: 5px;
+}
+
+.p_naranja {
+    color      : #d9844f;
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    text-align : left;
+    width      : 100%;
+    padding-top: 5px;
+}
+
+.p_rojo {
+    color      : #de2f2a;
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    text-align : left;
+    width      : 100%;
+    padding-top: 5px;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.cal-month-day {
+    background-color: white;
+}
+
+.cal-month-day:hover {
+    background-color: gray;
+}
+
+.menu-label-wrapper {
+    padding: 5px 10px 3px 10px;
+}
+
+.tipo-modulo {
+    font-weight   : bold;
+    width         : 100%;
+    border-bottom : 1px solid rgb(187, 187, 187);
+    padding-bottom: 3px;
+    display       : inline-block;
+    color         : black;
+}
+
+.placeholder {
+    margin-top: 35px;
+}
+
+/*Clases necesarias para que el tooltip de cada eje tomo el color y aspecto respectivo*/
+
+div.panel-green+div.tooltip .tooltip-inner {
+    color        : #000000;
+    background   : #FFFFFF;
+    border       : 2px solid #5cb85c;
+    border-radius: 6px;
+    box-shadow   : 0px 0px 10px #000;
+    text-align   : justify;
+}
+
+div.panel-primary+div.tooltip .tooltip-inner {
+    color        : #000000;
+    background   : #FFFFFF;
+    border       : 2px solid #428bca;
+    border-radius: 6px;
+    box-shadow   : 0px 0px 10px #000;
+    text-align   : justify;
+}
+
+div.panel-yellow+div.tooltip .tooltip-inner {
+    color        : #000000;
+    background   : #FFFFFF;
+    border       : 2px solid #f0ad4e;
+    border-radius: 6px;
+    box-shadow   : 0px 0px 10px #000;
+    text-align   : justify;
+}
+
+div.panel-red+div.tooltip .tooltip-inner {
+    color        : #000000;
+    background   : #FFFFFF;
+    border       : 2px solid #d9534f;
+    border-radius: 6px;
+    box-shadow   : 0px 0px 10px #000;
+    text-align   : justify;
+}
+
+div.panel-green+div.tooltip .tooltip-arrow {
+    bottom          : 0;
+    left            : 50%;
+    margin-left     : -5px;
+    border-width    : 5px 5px 0;
+    border-top-color: #5cb85c;
+}
+
+div.panel-primary+div.tooltip .tooltip-arrow {
+    bottom          : 0;
+    left            : 50%;
+    margin-left     : -5px;
+    border-width    : 5px 5px 0;
+    border-top-color: #428bca;
+}
+
+div.panel-yellow+div.tooltip .tooltip-arrow {
+    bottom          : 0;
+    left            : 50%;
+    margin-left     : -5px;
+    border-width    : 5px 5px 0;
+    border-top-color: #f0ad4e;
+}
+
+div.panel-red+div.tooltip .tooltip-arrow {
+    bottom          : 0;
+    left            : 50%;
+    margin-left     : -5px;
+    border-width    : 5px 5px 0;
+    border-top-color: #d9534f;
+}
+
+.row {
+    padding: 0px !important;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+    max-height: 100%;
+}
+
+@media (min-width: 767px) {
+    .navbar-translate {
+        position   : relative;
+        display    : block;
+        padding-top: 15px;
+    }
+}
+
+.label-translate {
+    color       : white;
+    margin-right: 25px;
+    margin-left : 25px;
+}
+
+.modal {
+    overflow-y: scroll;
+}
+
+.navbar-right {
+    float: right !important;
+}
+
+/*Clases para cambiar de color el tema*/
+.green-theme nav,
+.green-theme .panel-heading,
+.green-theme .btn-info,
+.green-theme .bubble-timeline,
+.green-theme .icon-timeline-container,
+.green-theme .btn-select-file,
+.green-theme .btn-view-file,
+.green-theme .btn-primary,
+.green-theme .btn-upload-file {
+    /* background-color: #71a95a !important; */
+    background-color: var(--color-primary) !important;
+}
+
+.green-theme .panel-primary,
+.green-theme .btn-info,
+.green-theme .btn-select-file,
+.green-theme .btn-view-file,
+.green-theme .btn-primary,
+.green-theme .panel-heading,
+.green-theme .btn-upload-file {
+    border-color: var(--color-primary) !important;
+}
+
+.green-theme .btn-danger {
+    color           : #fff;
+    background-color: #d9534f !important;
+    border-color    : #d43f3a !important;
+}
+
+.green-theme a,
+.green-theme .btn-upload-file:hover,
+.green-theme .btn-upload-file:focus {
+    color: white;
+}
+
+.green-theme .active a,
+.green-theme .material-switch>input[type="checkbox"]:checked+label::after,
+.green-theme .nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus,
+.green-theme .nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #007944 !important;
+}
+
+.btn-default {
+    color: #000 !important;
+}
+
+.panel-title {
+    color: #fff !important;
+}
+
+.btn-info {
+    color: #fff !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+.btn.active {
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 1);
+}
+
+.btn.active i {
+    font-weight: 600;
+}
+
+.estado_Testing {
+    background-color: #A4D4A4 !important;
+}
+
+.estado_Review {
+    background-color: #B3EBFC !important;
+}
+
+.estado_Canceled {
+    background-color: #FC9B9C !important;
+}
+
+.prioridad_1 {
+    background-color: #FCE464 !important;
+}
+
+div.has-error {
+    border: solid 1px #a94442;
+}
+
+/* ESTILO EXTRAIDO DEL ARCHIVO "index.php" */
+
+.popover-content {
+    color      : red;
+    font-size  : 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#confirm_pass,
+#nuevo_pass {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius   : 5px;
+}
+
+.top_nav {
+    background-color: #2ea3f2;
+    border-color    : #2ea3f2;
+}
+
+.top_nav>#a {
+    text-decoration: #ffffff;
+}
+
+form {
+    margin-left : auto;
+    margin-right: auto;
+    /* width    : 270px; */
+    height      : 225px;
+    padding     : 10px;
+    overflow    : hidden;
+}
+
+.alert_position {
+    top         : 70px;
+    margin-left : auto;
+    margin-right: auto;
+    width       : 270px;
+    z-index     : 5;
+}
+
+
+
+.footer {
+    position        : fixed;
+    bottom          : 0;
+    width           : 100%;
+    /* Set the fixed height of the footer here */
+    height          : 30px;
+    background-color: #000;
+}
+
+.footer>.container {
+    padding-right: 10px;
+    padding-left : 10px;
+}
+
+.container .text-muted {
+    margin: 10px 0;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+}
+
+.navbar-nav>li,
+.navbar-nav {
+    float: left;
+}
+
+.navbar-right {
+    margin-right: -15px !important;
+    float       : right !important;
+}
+
+.icono_blanco {
+    color: white;
+}
+
+@media(min-width: 767px) {
+    .nav.navbar-nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-nav {
+        display: inline-block !important;
+        float  : none !important;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/*Clases para cambiar de color el tema*/
+.green-theme nav,
+.green-theme .panel-heading,
+.green-theme .btn-info,
+.green-theme .bubble-timeline,
+.green-theme .icon-timeline-container,
+.green-theme .btn-select-file,
+.green-theme .btn-view-file,
+.green-theme .btn-primary {
+    background-color: var(--color-primary);
+}
+
+.green-theme .panel-primary,
+.green-theme .btn-info,
+.green-theme .btn-select-file,
+.green-theme .btn-view-file,
+.green-theme .btn-primary,
+.green-theme .panel-heading {
+    border-color: var(--color-primary);
+}
+
+.green-theme a {
+    color: white;
+}
+
+.green-theme .active a,
+.green-theme .material-switch>input[type="checkbox"]:checked+label::after,
+.green-theme .nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus,
+.green-theme .nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #007944 !important;
+}
+
+.btn-default {
+    color: #000 !important;
+}
+
+.panel-title {
+    color: #fff !important;
+}
+
+.btn-info {
+    color: #fff !important;
+}
+
+.btn-link {
+    color: var(--color-primary) !important;
+}
+
+#cuerpo {
+    margin-top: 25px;
+}
+
+.icon-under-maintenance {
+    font-size: 15em;
+    animation: fa-spin 6s infinite linear
+}
+
+.fila_seleccionable:hover {
+    cursor         : pointer;
+    text-decoration: underline;
+}
+
+/* Estilo para los inputs de cantidad de semillas en el listado de semillas */
+#inputCantidadSemillas[disabled] {
+    background-color: #eee;
+    color           : #999;
+    cursor          : not-allowed;
+}
+
+.btnCantidadAcresUsados,
+.btnCantidadSemillas,
+.btnEdad,
+.btnPorcentajeAcres {
+    background-color: #3498db;
+    color           : white;
+    border          : none;
+    min-height      : 20px;
+    border-radius   : 3px;
+    border          : 2px solid black;
+    transition      : background-color 0.3s ease;
+    cursor          : pointer;
+    width           : 100% !important;
+    text-align      : left;
+}
+
+
+.btnCantidadSemillas:hover,
+.btnEdad:hover,
+.btnCantidadAcresUsados:hover,
+.btnPorcentajeAcres:hover {
+    background-color: #2980b9;
+}
+
+.elementosCentradosVerticalmente {
+    display           : flex;
+    /* justify-content: center; */
+    align-items       : center;
+}
+
+.dentro-de-rango {
+    background-color: #3498db;
+
+}
+
+.fuera-de-rango {
+    background-color: #db3434;
+    color           : black;
+    font-weight     : bold;
+
+}
+
+.fuera-de-rango:hover {
+    background-color: #ad0d0d;
+
+}
+
+.cantidad_negativa {
+    background-color: #b4abab;
+    color           : #ad0d0d !important;
+    font-weight     : 600;
+
+}
+
+.boton_no_seleccionable {
+    cursor: default;
+}
