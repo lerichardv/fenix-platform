@@ -1920,6 +1920,31 @@ class db_usuario
         return $resultado;
     }
 
+    /*Función que valida la existencia de un email de usuario*/
+    public function usu_validar_email_unico($email, $cod_usuario)
+    {
+        $cod_usuario = !empty($cod_usuario) ? $cod_usuario : 0;
+        $SQL = "SELECT 
+                    count(1) as usuario
+                FROM
+                    usu_usuarios
+                WHERE
+                    email = :email
+                AND
+                    cod_usuario not in (:cod_usuario);";
+        $stmt = $this->db_conexion->prepare($SQL);
+        try {
+            $stmt->bindParam(":email", $email);
+            $stmt->bindParam(":cod_usuario", $cod_usuario);
+            $stmt->execute();
+            $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            $resultado = $e->getMessage();
+        }
+        $stmt->closeCursor();
+        return $resultado;
+    }
+
     /*
      * Obtiene el listado de los módulos activos.
      */

@@ -315,6 +315,10 @@ if (!empty($INFO_USU)) {
 
 		});
 
+		$("#email").on('keyup input', function(event) {
+			$(this).removeClass('input-has-error');
+		});
+
 		/*----------------------------------------------------------------------------------
 
 	                                    Validando listboxs
@@ -1292,7 +1296,15 @@ if (!empty($INFO_USU)) {
 
 						btn.button('reset');
 						return;
-					} else {
+					} else if (info[0] == 5) {
+						error_registro = 1;
+						grl_mensaje('The email entered is already in use.', 'Please change it to another one', 'warning');
+
+						$('#email').addClass('input-has-error');
+
+						btn.button('reset');
+						return;
+					} else if (info[0] == 1) {
 
 						if (actualizar == 1) {
 
@@ -1367,6 +1379,23 @@ if (!empty($INFO_USU)) {
 							});
 
 						}
+
+					} else {
+
+						error_registro = 1;
+
+						if (actualizar == 1) {
+
+							grl_mensaje('The user could not be updated. ', 'Please try later.', 'warning');
+
+						} else {
+
+							grl_mensaje('Unable to create user. ', 'Please try later.', 'warning');
+
+						}
+
+						btn.button('reset');
+						return;
 
 					}
 

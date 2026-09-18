@@ -74,6 +74,12 @@ if ($validate[0]['usuario'] != 0) {
   echo $mensaje;
   die();
 }
+$validate = $DB_USUARIO->usu_validar_email_unico($email, $cod_usuario);
+if (isset($validate[0]['usuario']) && $validate[0]['usuario'] != 0) {
+  $mensaje = "5|Email";
+  echo $mensaje;
+  die();
+}
 
 $usuario = strtolower(substr($nombre_1, 0, 1) . $apellido_1);
 $password_string = 'abcdefghijklmnpqrstuwxyzABCDEFGHJKLMNPQRSTUWXYZ23456789';
@@ -118,6 +124,17 @@ if ($actualizar == 1) {
     $cod_tipo_usuario,
     $payrate,
   );
+  if (strpos($result, 'Successfully updated user.') === false) {
+    if (strpos($result, 'Duplicate entry') !== false && (strpos($result, 'email') !== false || strpos($result, 'email_UNIQUE') !== false)) {
+      $mensaje = "5|Email";
+      echo $mensaje;
+      die();
+    } else {
+      $mensaje = "2|" . $result;
+      echo $mensaje;
+      die();
+    }
+  }
   $mensaje = "1|Exito al actualizar".$result;
   //Proceso para desvincular las granjas que no estan en el array de granjas
   $granjas_vinculadas = $DB_USUARIO->usu_get_granjas_vinculados_a_usuario($cod_usuario);
@@ -261,6 +278,17 @@ if ($actualizar == 1) {
     $cod_tipo_usuario,
     $payrate,
   );
+  if (strpos($result, 'User successfully entered.') === false) {
+    if (strpos($result, 'Duplicate entry') !== false && (strpos($result, 'email') !== false || strpos($result, 'email_UNIQUE') !== false)) {
+      $mensaje = "5|Email";
+      echo $mensaje;
+      die();
+    } else {
+      $mensaje = "2|" . $result;
+      echo $mensaje;
+      die();
+    }
+  }
   $cadena = $result; // 'User successfully entered.|' . $this->db_conexion->lastInsertId()
   $partes = explode("|", $cadena);
   $cod_usuario = $partes[1];
