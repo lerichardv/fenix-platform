@@ -1,40 +1,23 @@
 {
-    "short_name": "B&W Farming",
-    "name": "B&W Farming",
-    "start_url": "dashboard.php",
-    "background_color": "#3498db",
-    "theme_color": "#3498db",
+    "short_name": "Fenix",
+    "name": "Fenix",
+    "start_url": "index.php",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait",
-    "icons": [{
-            "src": "libs/imgs/icons/android-icon-72x72.png",
+    "icons": [
+        {
+            "src": "libs/imgs/icons/android-chrome-192x192.png",
             "type": "image/png",
-            "sizes": "72x72"
+            "sizes": "192x192",
+            "purpose": "any maskable"
         },
         {
-            "src": "libs/imgs/icons/android-icon-96x96.png",
+            "src": "libs/imgs/icons/android-chrome-512x512.png",
             "type": "image/png",
-            "sizes": "96x96"
-        },
-        {
-            "src": "libs/imgs/icons/android-icon-192x192.png",
-            "type": "image/png",
-            "sizes": "128x128"
-        },
-        {
-            "src": "libs/imgs/icons/android-icon-192x192.png",
-            "type": "image/png",
-            "sizes": "144x144"
-        },
-        {
-            "src": "libs/imgs/icons/android-icon-192x192.png",
-            "type": "image/png",
-            "sizes": "152x152"
-        },
-        {
-            "src": "libs/imgs/icons/android-icon-192x192.png",
-            "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "512x512",
+            "purpose": "any maskable"
         }
     ]
 }

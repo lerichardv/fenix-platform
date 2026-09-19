@@ -23,23 +23,35 @@ include_once("libs/db_classes/db_general.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, viewport-fit=cover">
 
-    <link rel="shortcut icon" type="image/ico" href="libs/imgs/icons/favicon.ico" />
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/x-icon" href="libs/imgs/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="libs/imgs/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="libs/imgs/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="libs/imgs/icons/favicon.ico">
+
+    <!-- Android & PWA Mobile Shortcuts -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="manifest.json">
 
-    <!-- Android-->
-    <meta name="theme-color" content="#3498db">
-
-
-    <!-- IOS-->
+    <!-- Apple iOS Safari (Add to Home Screen) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="libs/img/icons/icon-192x192.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="libs/img/icons/apple-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="libs/img/icons/apple-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="libs/img/icons/apple-icon-180x180.png">
-
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
     <meta name="apple-mobile-web-app-title" content="Fenix">
+    <link rel="apple-touch-icon" href="libs/imgs/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="libs/imgs/icons/apple-touch-icon.png">
+
+    <!-- SEO & Social Meta (Open Graph / Twitter) -->
+    <meta name="description" content="Fenix Platform">
+    <meta property="og:title" content="Fenix">
+    <meta property="og:description" content="Fenix Platform">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="libs/imgs/icons/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fenix">
+    <meta name="twitter:description" content="Fenix Platform">
+    <meta name="twitter:image" content="libs/imgs/icons/logo.png">
+
     <title>Fenix</title>
     <link rel="stylesheet" href="libs/css/style.css"> <!-- Resource style -->
     <!-- jQuery -->
@@ -187,7 +199,7 @@ if (isset($_POST['usuario'])) {
 
             <div class="row">
                 <div class="col-md-12" align="center">
-                    <img src="libs/imgs/Logo.png" width="50%" style="max-width: 250px;">
+                    <img src="libs/imgs/icons/logo.png" width="50%" style="max-width: 250px;" alt="Fenix">
                 </div>
             </div>
             <hr>
@@ -232,7 +244,7 @@ if (isset($_POST['usuario'])) {
 
             <div class="row">
                 <div class="col-md-12" align="center">
-                    <img src="libs/imgs/Logo.png" width="50%" style="max-width: 250px;">
+                    <img src="libs/imgs/icons/logo.png" width="50%" style="max-width: 250px;" alt="Fenix">
                 </div>
             </div>
             <div class="row">

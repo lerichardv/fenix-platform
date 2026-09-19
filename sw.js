@@ -3,13 +3,14 @@
 importScripts('libs/js/sw-utils.js');
 
 
-const STATIC_CACHE = 'static-v9';
-const DYNAMIC_CACHE = 'dynamic-v9';
-const INMUTABLE_CACHE = 'inmutable-v9';
+const STATIC_CACHE = 'static-v10';
+const DYNAMIC_CACHE = 'dynamic-v10';
+const INMUTABLE_CACHE = 'inmutable-v10';
 
 
 const APP_SHELL = [
     '/',
+    'manifest.json',
     'libs/css/style.css',
     'libs/funciones/func_generales.js',
     'libs/funciones/func_usuarios.js',
@@ -24,7 +25,13 @@ const APP_SHELL = [
     'libs/css/planificacion.css',
     'libs/js/app.js',
     'libs/js/sw-utils.js',
-    'libs/imgs/'
+    'libs/imgs/icons/favicon.ico',
+    'libs/imgs/icons/favicon-16x16.png',
+    'libs/imgs/icons/favicon-32x32.png',
+    'libs/imgs/icons/apple-touch-icon.png',
+    'libs/imgs/icons/android-chrome-192x192.png',
+    'libs/imgs/icons/android-chrome-512x512.png',
+    'libs/imgs/icons/logo.png'
 ];
 
 const APP_SHELL_INMUTABLE = [
@@ -68,7 +75,7 @@ const APP_SHELL_INMUTABLE = [
     'libs/DataTables/extensions/TableTools/js/dataTables.tableTools.js',
     'libs/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.js',
     'libs/Highcharts/js/highcharts.js',
-    'https://code.highcharts.com/highcharts-more.js',
+    'libs/Highcharts/js/highcharts-more.js',
     'libs/Highcharts/js/adapters/standalone-framework.js',
     'libs/Highcharts/js/modules/exporting.js',
     'libs/Highcharts/js/modules/heatmap.js',
@@ -85,11 +92,23 @@ const APP_SHELL_INMUTABLE = [
 
 self.addEventListener('install', e => {
     self.skipWaiting();
-    const cacheStatic = caches.open(STATIC_CACHE).then(cache => cache.addAll(APP_SHELL));
 
-    const cacheInmutable = caches.open(INMUTABLE_CACHE).then(cache => cache.addAll(APP_SHELL_INMUTABLE));
+    const cacheResources = (cacheName, urls) => {
+        return caches.open(cacheName).then(cache => {
+            return Promise.all(
+                urls.map(url =>
+                    cache.add(url).catch(err => {
+                        console.warn(`[SW] Failed to cache: ${url}`, err);
+                    })
+                )
+            );
+        });
+    };
 
-    e.waitUntil(Promise.all([cacheStatic, cacheInmutable]));
+    e.waitUntil(Promise.all([
+        cacheResources(STATIC_CACHE, APP_SHELL),
+        cacheResources(INMUTABLE_CACHE, APP_SHELL_INMUTABLE)
+    ]));
 });
 
 self.addEventListener('activate', e => {
