@@ -2956,7 +2956,7 @@ class db_usuario
     }
 
     /**
-     * Esta funcion genera un correo electrónico con cadena aleatoria con el dominio lmfdata.com
+     * Esta funcion genera un correo electrónico con cadena aleatoria con el dominio fenixplatform.com
      * Genera correo hasta que se verifica que en la columna usu_usuarios.email no existe el correo generado.
      * Cuando se comprueba que no existe retorna el correo generado.
      * @return string
@@ -2964,7 +2964,7 @@ class db_usuario
     function generar_email_aleatorio()
     {
         // Base para generar el correo
-        $dominio = "@lmfdata.com";
+        $dominio = "@fenixplatform.com";
         $longitud = 15; // Longitud de la cadena aleatoria
 
         do {

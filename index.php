@@ -41,8 +41,8 @@ include_once("libs/db_classes/db_general.php");
 
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="apple-mobile-web-app-title" content="LMF">
-    <title>LMF</title>
+    <meta name="apple-mobile-web-app-title" content="Fenix">
+    <title>Fenix</title>
     <link rel="stylesheet" href="libs/css/style.css"> <!-- Resource style -->
     <!-- jQuery -->
     <script type="text/javascript" src="libs/jQuery/jquery-2.1.3.js"></script>
@@ -270,7 +270,7 @@ if (isset($_POST['usuario'])) {
     <footer class="footer">
         <div class="container">
             <p class="text-muted">
-            <h6 style="color: white;">&copy; LMF <?php echo date("Y"); ?>.</h6>
+            <h6 style="color: white;">&copy; Fenix <?php echo date("Y"); ?>.</h6>
             </p>
         </div>
     </footer>

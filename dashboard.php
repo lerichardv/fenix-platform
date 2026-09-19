@@ -65,10 +65,10 @@ $PLANTACIONES_WATERCRESS = $DB_REP->rep_reporte_plantaciones_watercress($primer_
 
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="apple-mobile-web-app-title" content="LMF">
+    <meta name="apple-mobile-web-app-title" content="Fenix">
 
 
-    <title>LMF</title>
+    <title>Fenix</title>
     <link rel="stylesheet" href="libs/css/style.css"> <!-- Resource style -->
     <!-- jQuery -->
     <script type="text/javascript" src="libs/jQuery/jquery-2.1.3.js"></script>
